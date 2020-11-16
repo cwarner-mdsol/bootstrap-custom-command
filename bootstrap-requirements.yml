@@ -4,3 +4,5 @@
   tasks:
     - name: Running bootstrap requirements
       shell: /bin/echo "Working via git" > /tmp/blah
+      become: yes
+      become_user: root
