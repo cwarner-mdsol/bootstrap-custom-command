@@ -1,5 +1,5 @@
 ---
-- hosts: "{{ calling_host }}"
+- hosts: all
   gather_facts: false
   tasks:
     - name: Running bootstrap requirements
