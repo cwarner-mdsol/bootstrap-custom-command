@@ -1,7 +1,5 @@
 ---
-- hosts:
-    bootstrap_node:
-      ansible_host: "{{ calling_host }}"
+- hosts: "{{ calling_host }}"
   gather_facts: false
   tasks:
     - name: Running bootstrap requirements
