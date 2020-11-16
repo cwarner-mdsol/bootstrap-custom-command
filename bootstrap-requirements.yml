@@ -2,5 +2,5 @@
 - hosts: localhost
   gather_facts: false
   tasks:
-    - name: Run blackhole_nacl.py
+    - name: Running bootstrap requirements
       shell: /bin/echo "Working via git" > /tmp/blah
