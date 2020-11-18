@@ -8,6 +8,8 @@
       become_user: root
 
     - name: Required for gocd notification
+      become: yes
+      become_user: root
       file:
         path: /bootstrap/gocd/complete
         owner: root
