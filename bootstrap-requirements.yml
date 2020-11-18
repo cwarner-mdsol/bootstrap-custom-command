@@ -6,3 +6,10 @@
       shell: /bin/echo "Working via git" > /tmp/blah
       become: yes
       become_user: root
+
+    - name: Required for gocd notification
+      file:
+        path: /bootstrap/gocd-complete
+        owner: root
+        group: root
+        mode: 0600
