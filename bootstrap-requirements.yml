@@ -16,3 +16,4 @@
         group: root
         mode: 0600
         state: touch
+      ignore_errors: True
